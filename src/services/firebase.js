@@ -111,7 +111,8 @@ export async function getPhotos(userId, following) {
       return { username, ...photo, userLikedPhoto };
     })
   );
-
+  // retorna las fotos del usuario al q estamos seguiendo, incluido:
+  // el nombre del usuario y si le hemos dado like o no
   return photosWithUserDetails;
 }
 
